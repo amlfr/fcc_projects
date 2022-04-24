@@ -2,7 +2,7 @@ Collection of FreeCodeCamp projects.
 
 HTML/CSS: 
 
-  -Tribute pae
+  -Tribute page
   
   -Survey 
   
