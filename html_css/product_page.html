@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Product landing page</title>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap');
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  font-size: 12px;
+  text-align: center;
+  background-color: gainsboro;
+  font-family: 'Hind Vadodara', sans-serif;
+}
+
+
+main {
+  margin-top: 80px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+footer {
+  background-color: grey;
+  width: 40%;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 1.1rem;
+  
+}
+
+li {
+  float: left;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  margin: 0 auto 15px auto;
+  height: 30px;
+  width: 100px;
+  background-color: green;
+  border-style: none;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+#header {
+  display: flex;
+  background-color: gainsboro;
+  font-size: 1.75rem;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 85px;
+  z-index:  2;
+}
+
+#header-img {
+  height: 4vw;
+  margin: 10px  30px;
+}
+
+@media (max-width: 500px) {
+  #header-img {
+    height: 2vw;
+  }
+}
+
+
+#company-header{
+}
+
+#company-name {
+  font-weight: 900;
+
+}
+
+#features {
+  display:  flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+}
+
+#grid {
+  height: 100px;
+}
+
+#email {
+  width:  300px;
+  height: 25px;
+}
+
+#submit {
+  margin: 20px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+
+#submit:hover {
+  background-color:darkgreen;
+}
+
+#footer-ul {
+  position: relative;
+  justify-content: flex-end;
+}
+
+#copyright {
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+
+#container {
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+#how-it-works {
+  margin: 200px 0 200px 0;
+}
+
+#pricing {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.icons {
+  height: 100px;
+  width: 100px;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.feature-title {
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.feature-text {
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin: 15px;
+  width: 290px;
+}
+  
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin: 10px;
+}
+
+.tier {
+  background-color: grey;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.product-ul {
+  display: list-item;
+  
+}
+
+.product-li {
+  float: none ;
+  flex-direction: column;
+  font-weight: 550;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+
+  </style>
+</head>
+<body>
+  <header id="header">
+    <div id="company-header">
+    <img src="https://amlfr.github.io/hosted-assets/placeholderlogo.png"
+         id="header-img">
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+      </nav>
+      </header>
+    <main>
+      <div id="form-div">
+        <form id="form" action=" https://www.freecodecamp.com/email-submit">
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <input type="email" id="email" classe="email" placeholder="Enter your email" required>
+          <br>
+          <input type ="submit" id="submit" value="Send us your email">
+        </form>
+    </div>
+  <div id="container">
+    <section id="features">
+      <div class="grid">
+      <img src="https://amlfr.github.io/hosted-assets/placerholder.png" class="icons" id="icon1">
+       <div class="description">
+        <h2 class="feature-title">Lorem Ipsum</h2>
+      <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+      </div>
+      <div class="grid">
+      <img src="https://amlfr.github.io/hosted-assets/placerholder.png" class="icons">
+       <div class="description">
+        <h2 class="feature-title">Lorem Ipsum</h2>
+      <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+      </div>
+      <div class="grid">
+      <img src="https://amlfr.github.io/hosted-assets/placerholder.png" class="icons">
+       <div class="description">
+        <h2 class="feature-title">Lorem Ipsum</h2>
+      <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <section id="pricing">
+      <div class="product" id="product1">
+        <div class="tier">Product tier1</div>
+        <h2>$XXX</h2>
+        <ul class="product-ul">
+          <li class="product-li">Lorem ipsum</li>
+          <li class="product-li">Lorem ipsum</li>
+          <li class="product-li">Lorem ipsum</li>
+          <li class="product-li">Lorem ipsum</li>
+        </ul>
+          <button>Buy now!</button>
+      </div>
+      <div class="product" id="product2">
+        <div class="tier">Product tier2</div>
+        <h2>$XXX</h2>
+        <ul class="product-ul">
+          <li class="product-li">Lorem ipsum</li>
+          <li class="product-li">Lorem ipsum</li>
+          <li class="product-li">Lorem ipsum</li>
+          <li class="product-li">Lorem ipsum</li>
+        </ul>
+          <button>Buy now!</button>
+      </div>
+      <div class="product" id="product3">
+        <div class="tier">Product tier3</div>
+        <h2>$XXX</h2>
+        <ul class="product-ul">
+          <li class="product-li">Lorem ipsum</li>
+          <li class="product-li">Lorem ipsum</li>
+          <li class="product-li">Lorem ipsum</li>
+          <li class="product-li">Lorem ipsum</li>
+        </ul>
+          <button>Buy now!</button>
+      </div>
+    </section>
+  </div>
+      <footer>
+        <ul id="footer-ul">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p id="copyright">Copyright 2022, Placeholder Company</p>
+      </footer>
+
+</main>
+</body>
+
