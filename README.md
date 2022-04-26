@@ -19,4 +19,8 @@ Javascript:
 
   -roman_numeral converts a given number into roman numbers
   
+  -palindrome checker 
+  
+  -rot13 decipher 
+  
   -
