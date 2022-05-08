@@ -10,7 +10,7 @@ function checkCashRegister(price, cash, cid) {
           "DIME": 10,
           "NICKEL": 5,
           "PENNY": 1,
-        }
+        };
         // calculating change to give and initializing some variables
         let change = cash * 100- price * 100;
         console.log("c", change)
@@ -28,27 +28,24 @@ function checkCashRegister(price, cash, cid) {
              change -= currencyValues[denomination[0]];
              moneyGiven += currencyValues[denomination[0]];
              console.log(moneyGiven);
-         }// if there is money available we close the register otherwise it's open
-         if (moneyAvail == 0) {
-             result.status = "CLOSED";
-         } else {
-             result.status = "OPEN";
-         }; // putting the money given in the result object
+         };// if there is money available we close the register otherwise it's open
+            result.status = moneyAvail == 0 ? "CLOSED" : "OPEN";
+         // putting the money given in the result object
          if (moneyGiven > 0) {
              result.change.push([denomination[0], moneyGiven / 100]);
          };
-      }// if change isn't entirely repaid then we didn't have enough money
+      };// if change isn't entirely repaid then we didn't have enough money
       if (change > 0) {
           result.status = "INSUFFICIENT_FUNDS";
           result.change = [];
       }// looking if the register was closed and assigning the cid array to have the right format of output 
       else if(result.status === "CLOSED") {
           result.change = cid;
-      }//returning the result object
+      };//returning the result object
       console.log("result", result);
       return result;
       
-    }
+    };
   
      
     
