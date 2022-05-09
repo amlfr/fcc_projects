@@ -30,6 +30,6 @@ Javascript:
 
 Front-end libraries: 
     
-  -Scss/Bootstrap contains the html/CSS projects upgraded with bootstrap and using scss: 
+  -Scss/Bootstrap contains the html/CSS projects reworked with bootstrap and scss: 
       
         -Tribute page has a carousel of pictures. 
