@@ -23,4 +23,13 @@ Javascript:
   
   -rot13 decipher 
   
-  -
+  -phone_number takes a string of number and checks if it a valid US phone number
+  
+  -cash_register to simulate a situation where a clerk gives back change
+
+
+Front-end libraries: 
+    
+  -Scss/Bootstrap contains the html/CSS projects upgraded with bootstrap and using scss: 
+      
+        -Tribute page has a carousel of pictures. 
